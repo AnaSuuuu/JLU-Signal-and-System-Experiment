@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.10.28)  3 NOV 2023 08:35
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.10.28)  7 NOV 2023 11:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1107,32 +1107,32 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: ./images//3.19.5.png Graphic file (type bmp)
 <./images//3.19.5.png>
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 223--223
 []|\TU/SimSun(0)/m/n/10.95 输 入 信 号 电 平
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 223--223
 []|\TU/SimSun(0)/m/n/10.95 实 测
  []
 
 
-Overfull \hbox (3.11967pt too wide) in paragraph at lines 219--219
+Overfull \hbox (3.11967pt too wide) in paragraph at lines 223--223
 []|[]| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 223--223
 []|\TU/SimSun(0)/m/n/10.95 实 测
  []
 
 
-Overfull \hbox (3.11967pt too wide) in paragraph at lines 219--219
+Overfull \hbox (3.11967pt too wide) in paragraph at lines 223--223
 []|[]| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--219
+Underfull \hbox (badness 10000) in paragraph at lines 223--223
 []|\TU/SimSun(0)/m/n/10.95 实 测
  []
 
@@ -1144,20 +1144,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 243--243
-[]|\TU/lmr/m/n/10.95 -
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 243--243
-[]|\TU/lmr/m/n/10.95 -
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 243--243
-[]|\TU/lmr/m/n/10.95 -
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1166,6 +1152,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [5]
+File: ./images//1-a(1).png Graphic file (type bmp)
+<./images//1-a(1).png>
+File: ./images//1-b(1).png Graphic file (type bmp)
+<./images//1-b(1).png>
+File: ./images//2-a(1).png Graphic file (type bmp)
+<./images//2-a(1).png>
+File: ./images//2-b(1).png Graphic file (type bmp)
+<./images//2-b(1).png>
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1173,17 +1168,33 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[6] (./lab03.aux)
+[6]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[7]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[8] (./lab03.aux)
 Package rerunfilecheck Info: File `lab03.out' has not changed.
 (rerunfilecheck)             Checksum: 7B8A684A12268F44288EE7B795A9B895;163.
  ) 
 Here is how much of TeX's memory you used:
- 36751 strings out of 476683
- 792262 string characters out of 5807574
- 1873012 words of memory out of 5000000
- 56411 multiletter control sequences out of 15000+600000
+ 36795 strings out of 476683
+ 793212 string characters out of 5807574
+ 1874012 words of memory out of 5000000
+ 56451 multiletter control sequences out of 15000+600000
  519153 words of font info for 80 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  105i,12n,107p,449b,648s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on lab03.pdf (6 pages).
+Output written on lab03.pdf (8 pages).
