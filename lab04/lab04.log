@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.10.28)  9 NOV 2023 11:35
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.10.28)  9 NOV 2023 12:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1063,6 +1063,30 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [2
 
 ]
+Overfull \hbox (2.36357pt too wide) in paragraph at lines 129--129
+[]|\TU/lmr/m/n/10.95 105| 
+ []
+
+
+Overfull \hbox (2.36357pt too wide) in paragraph at lines 129--129
+[]|\TU/lmr/m/n/10.95 115| 
+ []
+
+
+Overfull \hbox (2.36357pt too wide) in paragraph at lines 129--129
+[]|\TU/lmr/m/n/10.95 125| 
+ []
+
+
+Overfull \hbox (2.36357pt too wide) in paragraph at lines 129--129
+[]|\TU/lmr/m/n/10.95 135| 
+ []
+
+
+Overfull \hbox (2.36357pt too wide) in paragraph at lines 129--129
+[]|\TU/lmr/m/n/10.95 145| 
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1071,14 +1095,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [3] (./lab04.aux)
-Package rerunfilecheck Info: File `lab04.out' has not changed.
-(rerunfilecheck)             Checksum: 7B8A684A12268F44288EE7B795A9B895;163.
+
+Package rerunfilecheck Warning: File `lab04.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `lab04.out':
+(rerunfilecheck)             Before: ED9B34CC4D4122C6E0596013EA81E22A;163
+(rerunfilecheck)             After:  1703121C35C3ACA61EEEC6097059466A;147.
  ) 
 Here is how much of TeX's memory you used:
- 36651 strings out of 476683
- 789551 string characters out of 5807574
+ 36654 strings out of 476683
+ 789606 string characters out of 5807574
  1870012 words of memory out of 5000000
- 56322 multiletter control sequences out of 15000+600000
+ 56325 multiletter control sequences out of 15000+600000
  519153 words of font info for 80 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  105i,11n,107p,441b,627s stack positions out of 10000i,1000n,20000p,200000b,200000s

@@ -73,7 +73,7 @@
 
 \clearpage
 \setcounter{section}{0}
-\section{实验十九 \quad 线性系统的频率特性}
+\section{实验二十 \quad 离散信号的频谱}
 	
 \subsection*{一、实验目的}
 \begin{enumerate}
@@ -108,5 +108,39 @@
   \item 有效频带宽度：严格地说，周期性信号所包含的谐波分量有无限多，不过由于谐波振幅随频率增高而减小，通常只考虑频率较低的一些分量就够了。从 $0$ 频率到需要考虑最高次谐波频率间的频段称为信号的频带宽度。信号频带宽度的具体定义视情况而定，有时将谐波振幅下降到最大值的 $\dfrac{1}{K}$（例如 $\dfrac{1}{10}$）的频段称为信号的频带宽度。本实验对于周期正弦信号频率为 $25KHz$，从频谱图可以看出，该信号为单频信号，抽样脉冲控制信号频率 $f_s$ 取 $5OKHz$。对于周期方波和三角波信号，若其基频率为 $5KHz$，从频谱图可以看出，可取 $5$ 倍于基波频率作为有效的频带宽度，则抽样脉冲控制信号的频率 $f_s$ 取 $50KHz$。
   
 \end{enumerate}
+
+\subsection*{四、实验内容与步骤}
+\begin{enumerate}
+  \item 输入信号为 $5KHz$ 的方波信号，$V_{p-p} = 2V$，观察抽样后离散方波信号的波形并测绘出其频谱图。
+  \begin{enumerate}
+    \item[(1)] 用选频电平表测量抽样后离散信号 $f_s(t)$ 的频谱。 
+    \begin{table}[htbp]
+      \renewcommand\arraystretch{1.7}
+      \centering
+      \caption{}
+      \begin{tabularx}{\textwidth}{|p{0.2\textwidth}|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|}
+        \hline
+        f(kHz) & 5 & 15 & 25 & 35 & 45 & 55 & 65 & 75 & 85 & 95 & 105 & 115 & 125 & 135 & 145 \\
+        \hline
+        Pn(dB) &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+        \hline
+        Un &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+        \hline
+      \end{tabularx}
+    \end{table}
+    
+    注：$U_n = 0.775 \times 10^{\frac{P_n}{20}}$
+
+    \item[(2)] 调整 $f(t)$ 和 $s(t)$ 的频率，使抽样信号通过滤波器后能较好地复原。
+    \item[(3)] 改变抽样频率为 $f_s < 2B$ 和 $f_s \ge 2B$，观察并描绘复原后的信号，比较其失真程度。
+  \end{enumerate}
+\end{enumerate}
+
+\subsection*{五、实验注意事项}
+\begin{enumerate}
+  \item 只有当取样脉冲的频率与被取样信号1频率保持整数倍数关系时，示波器上才能得到稳定的波形，故需微调脉冲的频率。
+  \item 被取样信号的幅度不宜过大。否则将得不到良好的离散信号。
+\end{enumerate}
+
 
 \end{document}
