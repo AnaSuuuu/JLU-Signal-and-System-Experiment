@@ -89,158 +89,24 @@
 	\item 选频电平表。
 \end{enumerate}
 
-
 \subsection*{三、实验原理}
-\begin{wrapfigure}{l}{0cm} % l表示靠文字内容的左侧，0cm表示环境横向长度
-	\centering
-	\includegraphics[width=0.3\textwidth]{3.19.1.png}
-	\caption{}
-\end{wrapfigure}
-电路用频域表示时，输入和输出信号的关系可用式 
-\begin{equation}
-  V_2(\omega) = V_1(\omega)H(\omega)
-\end{equation}
-其中 $\mathrm{H_1(t)}$ 称之为该系统的频率特性，它的幅值 $\mathrm{|H(\omega)|}$ 称为幅频特性。$\mathrm{|H(\omega)|}$ 只与系统的结构组成有关，而与输入信号无关。本次设计就是要研究简单的 $\mathrm{RL}$ 低通网络和 $\mathrm{RC}$ 高通网络的幅频特性。由上式得 $\mathrm{H(\omega) = \dfrac{V_2(\omega)}{V_1(\omega)}}$，两边取对数再乘以 $20$，则有 $\mathrm{20lgH(\omega) = 20lgV_2(\omega) - 20lgV_1(\omega)}$，
-\begin{equation}
-  N(\omega) = N_2(\omega) - N_1(\omega)
-\end{equation}
-
-\begin{figure}[htbp]
-	\centering
-	\subfloat[]{
-		\includegraphics[width=0.3\textwidth]{3.19.2(a).png}
-	}
-	\subfloat[]{
-		\includegraphics[width=0.3\textwidth]{3.19.2(b).png}
-	}
-	\caption{}
-\end{figure}
-
-根据电压电平的定义 $\mathrm{20lgV_2(\omega)}$ 和 $\mathrm{20lgV_1(\omega)}$ 正好分别与输出，输人电压电平的定义相符。故 $\mathrm{|H(\omega)|}$ 可由系统的输出信号 与输人信号的电平差 $\mathrm{N(\omega)}$ 求得。这是测量系统的频率特性的另一种方法。在实际工作中常常直接用 $\mathrm{N(\omega)}$ 來表征 $\mathrm{H(\omega)}$ 而不须求出 $\mathrm{H(\omega)}$，它清楚地表示了如图一线性时不变网络对任一个确定频率的正弦信号具有 $\mathrm{N(\omega)dB}$ 的衰减 [$\mathrm{N(\omega)}$ 为负值时]或增益[$\mathrm{N(\omega)}$ 为正值时]。
-下图（a）是一个简单的低通网络，其频率特性：
-\begin{equation}
-  H(\omega) = \dfrac{V_2}{V_1} = \dfrac{1}{1 + j\dfrac{\omega L}{R}}
-\end{equation}
-
-经过推导变换，可得
-\begin{equation}
-  \left |H(\omega) \right | = \left |\dfrac{V_2}{V_1} \right | = \left |\dfrac{1}{1 + j\dfrac{\omega L}{R}}\right | = \left | \dfrac{1}{\sqrt{1 + (\dfrac{2\pi fL}{R})^2}} \right |
-\end{equation}
-$\mathrm{H(\omega) \sim \omega}$ 幅频特性曲线如下图（b）所示，在半功率频率 $f_c = \dfrac{1}{\tau} = \dfrac{R}{2\pi L}$ 时，$H(\omega) = 0.707$。
-
-下图（a）是一个简单的高通网络，其频率特性为：
-\begin{equation}
-  H(\omega) = \dfrac{V_2}{V_1} = \dfrac{j\omega RC}{1 + j\omega RC}
-\end{equation}
-
-经过推导变换，可得
-\begin{equation}
-  \left |H(\omega) \right | = \left |\dfrac{V_2}{V_1} \right | = \left |\dfrac{j\omega RC}{1 + j\omega RC}\right | = \left | \dfrac{2\pi fRC}{\sqrt{1 + (2\pi fRC)^2}} \right |
-\end{equation}
-$\mathrm{H(\omega) \sim \omega}$ 幅频特性曲线如下图（b）所示，在半功率频率 $f_c = \dfrac{1}{\tau} = \dfrac{R}{2\pi L}$ 时，$H(\omega) = 0.707$。
-
-\begin{figure}[htbp]
-	\centering
-	\subfloat[]{
-		\includegraphics[width=0.3\textwidth]{3.19.3(a).png}
-	}
-	\subfloat[]{
-		\includegraphics[width=0.3\textwidth]{3.19.3(b).png}
-	}
-	\caption{}
-\end{figure}
-
-\subsection*{五、说明}
-本次实验是利用选频电平表分别测出线性网络的输人和输出电平,根据 $\mathrm{N(\omega)}$ 得到该网络的幅频特性。
-
-信号源输出阻抗置 $50\Omega$。选频表输人阻抗置 $600\Omega$ 输人阻抗代替。
-
-\begin{figure}[htbp]
-	\centering
-	\subfloat[]{
-		\includegraphics[width=0.7\textwidth]{3.19.4.png}
-	}
-	\caption{}
-\end{figure}
-
 \begin{enumerate}
-	\item 测量输人信号频谱。
-	\begin{enumerate}
-    \item[A、] 电路图连接。（图 4）
-    \item[B、] 用示波器和选频 表精确校准信号,输人信号为：周期 $7-200\mu s$,脉宽 $\tau =60 \mu s$:幅度 $V=5V$ 的矩形脉冲并画出波形图。
-    \item[C、] 按表一第二栏的要求测出信号各次谱波的电平值 $N_1$。
-    \item[D、] 观察示波器的波形并画在坐标纸上。
-  \end{enumerate}
-	\item 测量低通网络的输出电平。
-	  \begin{enumerate}
-      \item[A、] 电路如图 5 连接。
-      \item[B、] 按表一第四栏的要求测出低通网络输出电平值 $\mathrm{N_d(\omega)}$。
-      \item[C、] 观察示波器的波形并画在坐标纸上。
-    \end{enumerate}
-  \item 测量高通网络的输出电平。
-    \begin{enumerate}
-      \item[A、] 将图五电路中的电感 $L$ 改为 $0.01\mu F$ 的电容。
-      \item[B、] 按表一第七栏的要求测出高通网络输出电平值 $N_d(\omega)$。
-      \item[C、] 观察示波器的波形并画在坐标纸上.
-    \end{enumerate}
-  \item 分别计算高，低通滤波电路的幅频特性 $N_d(\omega)$。画出幅频特性曲线。
+  \item 离散时间信号可以从离散信号源获得,也可以从连续时间信号经抽样得到,抽样信号 $fs(t)$ 可以看成连续信号 $f(t)$ 和一组开关函数 $s(t)$ 的乘积,即 $fs(t)= f(t) s(t)$。
+  
+  $s(t)$ 是一组周期性窄脉冲,周期 $T$ 称为抽样周期。其倒数 $f_s = \dfrac{1}{Ts}$称为抽样频率。
+  
+  若连续信号 $f(t)$ 的频谱如图2所示，则以 $f(t)$ 取样获得的取样信号 $f_s(t)$ 的频谱包括了原连续信号 $f(t)$ 的频谱以及无限个经过平移的原信号频谱，平移的频率间隔等于取样频率 $\omega_s = \dfrac{2\pi}{T_s}$，如图3所示，如果开关函数是周期性矩形脉冲，且脉冲宽度 $\tau$ 不为零时，则取信号 $f_s(t)$ 的频谱 $F_s(\omega)$ 的包络线按 $\dfrac{\sin x}{x}$ 的规律接减（$X = \dfrac{n\pi \tau}{T_s}$）。
+  
+  取样信号 $f_s(t)$ 的频谱与连续时间信号测试方法一样，此时须注意频谱的周期性延拓。
+  
+  \item 正如测得了足够的实验数据以后，我们可以在坐标纸上把一系统数据点连起来，得到一条光滑的曲线。抽样信号在一定条件下也可以恢复到原信号，只要用一截止频率等于原信号频谱中最高频率 $\omega_m$ 的低通滤波器滤除高频分量，而仅存原信号频谱的频率成分，这样，低通滤波器的输出是得到恢复的原信号。
+  
+  根据采样定理，原信号得以恢复的条件是取样频率 $f_s \ge 2B$。$f_s$ 为取样频率，$B$ 为原信号的有效频带宽度。当取样频率 $f_s < 2B$ 时，取样信号的频谱会发生混迭。如图4所示，此时，我们无法用低通滤波器获得原信号频谱的全部信息内容。
+  
+  实验中选用 $f_s<2B$，$f_s=2B$，$f_s > 2B$ 三种抽样频率对连续信号进行抽样，以验证抽样定理一要使信号抽样后能不失真地还原，抽样频率 $f_s$ 必须大于信号频谱中最高频率的两倍。
+
+  \item 有效频带宽度：严格地说，周期性信号所包含的谐波分量有无限多，不过由于谐波振幅随频率增高而减小，通常只考虑频率较低的一些分量就够了。从 $0$ 频率到需要考虑最高次谐波频率间的频段称为信号的频带宽度。信号频带宽度的具体定义视情况而定，有时将谐波振幅下降到最大值的 $\dfrac{1}{K}$（例如 $\dfrac{1}{10}$）的频段称为信号的频带宽度。本实验对于周期正弦信号频率为 $25KHz$，从频谱图可以看出，该信号为单频信号，抽样脉冲控制信号频率 $f_s$ 取 $5OKHz$。对于周期方波和三角波信号，若其基频率为 $5KHz$，从频谱图可以看出，可取 $5$ 倍于基波频率作为有效的频带宽度，则抽样脉冲控制信号的频率 $f_s$ 取 $50KHz$。
+  
 \end{enumerate}
-
-\begin{figure}[htbp]
-	\centering
-	\subfloat[]{
-		\includegraphics[width=0.6\textwidth]{3.19.5.png}
-	}
-	\caption{}
-\end{figure}
-
-\begin{table}[H]
-  \renewcommand\arraystretch{1.7}
-  \centering
-  \caption{实际值测量}
-  \begin{tabularx}{\textwidth}{|p{0.156\textwidth}|X|X|X|X|X|X|X|X|X|X|X|}
-    \hline
-    \multicolumn{2}{|c|}{$\mathrm{f(KH_z)}$} & 5 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 \\
-    \hline
-    输入信号电平 $N_1$ & 实测值 & 7.2 & 2.7 & -10.2 & -7.6 & -4.9 & -10.9 & -20.5 & -9.3 & -11.9 & -59.5 \\
-    \hline
-    \multirow{3}{*}{低通滤波电路 $N_d$} & 实测值 & &  &  &  &  & & &  & -22.7 & -30 \\
-    \cline{2-12}
-     & $N(\omega)$ & &  &  &  &  & & & & &  \\
-     \cline{2-12}
-     & $H(\omega)$ & &  &  &  &  & & & & &  \\
-    \hline
-    \multirow{3}{*}{低通滤波电路 $N_d$} & 实测值 & &  &  &  &  & & & & &  \\
-    \cline{2-12}
-    & $N(\omega)$ & &  &  &  &  & & & & &  \\
-    \cline{2-12}
-    & $H(\omega)$ & &  &  &  &  & & & & &  \\
-    \hline
-  \end{tabularx}
-\end{table}
-注：$H(\omega) = 10^{\frac{N(\omega)}{20}}$
-
-\begin{table}[H]
-  \renewcommand\arraystretch{1.7}
-  \centering
-  \caption{理论值计算}
-  \begin{tabularx}{\textwidth}{|p{0.156\textwidth}|X|X|X|X|X|X|X|X|X|X|X|X|}
-    \hline
-    \multicolumn{2}{|c|}{$\mathrm{f(KH_z)}$} & 5 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 \\
-    \hline
-    \multirow{3}{*}{RL电路} & $N(f)$ & -0.52 & -1.78 & -3.31 & -4.81 & -6.20 & -7.45 & -8.58 & -9.60 & -10.52 & -11.36
-    \\
-    \cline{2-12}
-     &$H(f)$ & 0.94 & 0.81 &	0.68 & 0.57	& 0.49 & 0.42 &	0.37 & 0.33 & 0.30 & 0.27
-    \\
-    \hline
-    \multirow{3}{*}{RC电路} & $N(f)$ & -14.65 & -9.05 &	-6.16 & -4.41 &	-3.28 &	-2.51 & -1.97 & -1.58 &	-1.30 & -1.08
-    \\
-    \cline{2-12}
-     & $H(f)$ & 0.19 & 0.35	& 0.49 & 0.60 &	0.69 & 0.75 &	0.80 & 0.83 &	0.86 & 0.88
-    \\
-    \hline
-  \end{tabularx}
-\end{table}
 
 \end{document}

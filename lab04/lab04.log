@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.10.28)  6 NOV 2023 16:36
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.10.28)  9 NOV 2023 11:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -858,8 +858,7 @@ Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
 \g__lipsum_par_int=\count376
 \l__lipsum_a_int=\count377
 \l__lipsum_b_int=\count378
- (d:/texlive/2023/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
-No file lab04.aux.
+ (d:/texlive/2023/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex)) (./lab04.aux)
 \openout1 = `lab04.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
@@ -938,6 +937,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 19.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -973,11 +973,9 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring ON on input line 19.
+(./lab04.out) (./lab04.out)
 \@outlinefile=\write4
 \openout4 = `lab04.out'.
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
@@ -986,7 +984,7 @@ Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count379
 LaTeX Font Info:    Trying to load font information for U+msa on input line 24.
-(d:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (d:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 24.
@@ -1055,32 +1053,6 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
 (hyperref)                replaced by space on input line 76.
 
-File: ./images//3.19.1.png Graphic file (type bmp)
-<./images//3.19.1.png>
-
-Underfull \hbox (badness 3460) in paragraph at lines 102--104
-\TU/SimSun(0)/m/n/10.95 其 中 $[]$ 称 之 为 该 系 统 的 频 率 特 性，|  它 的 幅 值 $[]$ 称 为 幅
- []
-
-
-Underfull \hbox (badness 2005) in paragraph at lines 102--104
-\TU/SimSun(0)/m/n/10.95 频 特 性。| $[]$ 只 与 系 统 的 结 构 组 成 有 关，|  而 与 输 入 信 号 无 关。|  本
- []
-
-
-Underfull \hbox (badness 6220) in paragraph at lines 102--104
-\TU/SimSun(0)/m/n/10.95 次 设 计 就 是 要 研 究 简 单 的 $[]$ 低 通 网 络 和 $[]$ 高 通 网 络 的 幅
- []
-
-
-Underfull \hbox (badness 5878) in paragraph at lines 102--104
-\TU/SimSun(0)/m/n/10.95 频 特 性。|  由 上 式 得 $[]$，|  两 边 取 对 数 再 乘 以 $\OT1/cmr/m/n/10.95 20$\TU/SimSun(0)/m/n/10.95 ，|  则 有
- []
-
-File: ./images//3.19.2(a).png Graphic file (type bmp)
-<./images//3.19.2(a).png>
-File: ./images//3.19.2(b).png Graphic file (type bmp)
-<./images//3.19.2(b).png>
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1091,13 +1063,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [2
 
 ]
-File: ./images//3.19.3(a).png Graphic file (type bmp)
-<./images//3.19.3(a).png>
-File: ./images//3.19.3(b).png Graphic file (type bmp)
-<./images//3.19.3(b).png>
-File: ./images//3.19.4.png Graphic file (type bmp)
-<./images//3.19.4.png>
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1105,96 +1070,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[3]
-File: ./images//3.19.5.png Graphic file (type bmp)
-<./images//3.19.5.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 219--219
-[]|\TU/SimSun(0)/m/n/10.95 输 入 信 号 电 平
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 219--219
-[]|\TU/SimSun(0)/m/n/10.95 实 测
- []
-
-
-Overfull \hbox (3.11967pt too wide) in paragraph at lines 219--219
-[]|[]| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 219--219
-[]|\TU/SimSun(0)/m/n/10.95 实 测
- []
-
-
-Overfull \hbox (3.11967pt too wide) in paragraph at lines 219--219
-[]|[]| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 219--219
-[]|\TU/SimSun(0)/m/n/10.95 实 测
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 243--243
-[]|\TU/lmr/m/n/10.95 -
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 243--243
-[]|\TU/lmr/m/n/10.95 -
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 243--243
-[]|\TU/lmr/m/n/10.95 -
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[5]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[6] (./lab04.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `lab04.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `lab04.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  7B8A684A12268F44288EE7B795A9B895;163.
+[3] (./lab04.aux)
+Package rerunfilecheck Info: File `lab04.out' has not changed.
+(rerunfilecheck)             Checksum: 7B8A684A12268F44288EE7B795A9B895;163.
  ) 
 Here is how much of TeX's memory you used:
- 36744 strings out of 476683
- 792200 string characters out of 5807574
- 1872012 words of memory out of 5000000
- 56410 multiletter control sequences out of 15000+600000
+ 36651 strings out of 476683
+ 789551 string characters out of 5807574
+ 1870012 words of memory out of 5000000
+ 56322 multiletter control sequences out of 15000+600000
  519153 words of font info for 80 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 105i,12n,107p,449b,648s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 105i,11n,107p,441b,627s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on lab04.pdf (6 pages).
+Output written on lab04.pdf (3 pages).
