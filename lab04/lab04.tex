@@ -93,16 +93,55 @@
 \begin{enumerate}
   \item 离散时间信号可以从离散信号源获得,也可以从连续时间信号经抽样得到,抽样信号 $fs(t)$ 可以看成连续信号 $f(t)$ 和一组开关函数 $s(t)$ 的乘积,即 $fs(t)= f(t) s(t)$。
   
+  \begin{figure}[htbp]
+    \centering
+    \subfloat[]{
+      \includegraphics[width=0.3\textwidth]{1-a.png}
+    }
+    \subfloat[]{
+      \includegraphics[width=0.3\textwidth]{1-b.png}
+    }
+    \subfloat[]{
+      \includegraphics[width=0.3\textwidth]{1-c.png}
+    }
+    \caption{对连续时间信号进行取样}
+  \end{figure}
+
+
   $s(t)$ 是一组周期性窄脉冲,周期 $T$ 称为抽样周期。其倒数 $f_s = \dfrac{1}{Ts}$称为抽样频率。
   
   若连续信号 $f(t)$ 的频谱如图2所示，则以 $f(t)$ 取样获得的取样信号 $f_s(t)$ 的频谱包括了原连续信号 $f(t)$ 的频谱以及无限个经过平移的原信号频谱，平移的频率间隔等于取样频率 $\omega_s = \dfrac{2\pi}{T_s}$，如图3所示，如果开关函数是周期性矩形脉冲，且脉冲宽度 $\tau$ 不为零时，则取信号 $f_s(t)$ 的频谱 $F_s(\omega)$ 的包络线按 $\dfrac{\sin x}{x}$ 的规律接减（$X = \dfrac{n\pi \tau}{T_s}$）。
   
   取样信号 $f_s(t)$ 的频谱与连续时间信号测试方法一样，此时须注意频谱的周期性延拓。
   
+  \begin{figure}[htbp]
+    \centering
+    \begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=6cm]{2.png}
+    \caption{原信号频谱图}
+    \end{minipage}
+    \begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=9cm]{3.png}
+    \caption{取样信号频谱}
+    \end{minipage}
+  \end{figure}
+    
+
+
   \item 正如测得了足够的实验数据以后，我们可以在坐标纸上把一系统数据点连起来，得到一条光滑的曲线。抽样信号在一定条件下也可以恢复到原信号，只要用一截止频率等于原信号频谱中最高频率 $\omega_m$ 的低通滤波器滤除高频分量，而仅存原信号频谱的频率成分，这样，低通滤波器的输出是得到恢复的原信号。
   
   根据采样定理，原信号得以恢复的条件是取样频率 $f_s \ge 2B$。$f_s$ 为取样频率，$B$ 为原信号的有效频带宽度。当取样频率 $f_s < 2B$ 时，取样信号的频谱会发生混迭。如图4所示，此时，我们无法用低通滤波器获得原信号频谱的全部信息内容。
   
+  \begin{figure}[htbp]
+    \centering
+    \subfloat[]{
+      \includegraphics[width=0.8\textwidth]{4.png}
+    }
+    \caption{$f_s < 2B$ 时，取样信号频谱}
+  \end{figure}
+
   实验中选用 $f_s<2B$，$f_s=2B$，$f_s > 2B$ 三种抽样频率对连续信号进行抽样，以验证抽样定理一要使信号抽样后能不失真地还原，抽样频率 $f_s$ 必须大于信号频谱中最高频率的两倍。
 
   \item 有效频带宽度：严格地说，周期性信号所包含的谐波分量有无限多，不过由于谐波振幅随频率增高而减小，通常只考虑频率较低的一些分量就够了。从 $0$ 频率到需要考虑最高次谐波频率间的频段称为信号的频带宽度。信号频带宽度的具体定义视情况而定，有时将谐波振幅下降到最大值的 $\dfrac{1}{K}$（例如 $\dfrac{1}{10}$）的频段称为信号的频带宽度。本实验对于周期正弦信号频率为 $25KHz$，从频谱图可以看出，该信号为单频信号，抽样脉冲控制信号频率 $f_s$ 取 $5OKHz$。对于周期方波和三角波信号，若其基频率为 $5KHz$，从频谱图可以看出，可取 $5$ 倍于基波频率作为有效的频带宽度，则抽样脉冲控制信号的频率 $f_s$ 取 $50KHz$。

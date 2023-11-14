@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.10.28)  13 NOV 2023 10:26
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.10.28)  10 NOV 2023 10:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**lab04
-(./lab04.tex
+**lab05
+(./lab05.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (d:/texlive/2023/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -858,8 +858,8 @@ Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
 \g__lipsum_par_int=\count376
 \l__lipsum_a_int=\count377
 \l__lipsum_b_int=\count378
- (d:/texlive/2023/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex)) (./lab04.aux)
-\openout1 = `lab04.aux'.
+ (d:/texlive/2023/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex)) (./lab05.aux)
+\openout1 = `lab05.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
@@ -973,9 +973,9 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring ON on input line 19.
-(./lab04.out) (./lab04.out)
+(./lab05.out) (./lab05.out)
 \@outlinefile=\write4
-\openout4 = `lab04.out'.
+\openout4 = `lab05.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
@@ -1053,21 +1053,6 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
 (hyperref)                replaced by space on input line 76.
 
-File: ./images//1-a.png Graphic file (type bmp)
-<./images//1-a.png>
-File: ./images//1-b.png Graphic file (type bmp)
-<./images//1-b.png>
-File: ./images//1-c.png Graphic file (type bmp)
-<./images//1-c.png>
-File: ./images//2.png Graphic file (type bmp)
-<./images//2.png>
-File: ./images//3.png Graphic file (type bmp)
-<./images//3.png>
-
-Overfull \hbox (10.24518pt too wide) in paragraph at lines 126--127
- [][] 
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1078,9 +1063,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [2
 
 ]
-File: ./images//4.png Graphic file (type bmp)
-<./images//4.png>
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1088,49 +1070,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[3]
-Overfull \hbox (2.36357pt too wide) in paragraph at lines 168--168
-[]|\TU/lmr/m/n/10.95 105| 
- []
-
-
-Overfull \hbox (2.36357pt too wide) in paragraph at lines 168--168
-[]|\TU/lmr/m/n/10.95 115| 
- []
-
-
-Overfull \hbox (2.36357pt too wide) in paragraph at lines 168--168
-[]|\TU/lmr/m/n/10.95 125| 
- []
-
-
-Overfull \hbox (2.36357pt too wide) in paragraph at lines 168--168
-[]|\TU/lmr/m/n/10.95 135| 
- []
-
-
-Overfull \hbox (2.36357pt too wide) in paragraph at lines 168--168
-[]|\TU/lmr/m/n/10.95 145| 
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[4] (./lab04.aux)
-Package rerunfilecheck Info: File `lab04.out' has not changed.
-(rerunfilecheck)             Checksum: 1703121C35C3ACA61EEEC6097059466A;147.
+[3] (./lab05.aux)
+Package rerunfilecheck Info: File `lab05.out' has not changed.
+(rerunfilecheck)             Checksum: 9941F6F9FD4A7502B524013B98C02BBB;163.
  ) 
 Here is how much of TeX's memory you used:
- 36724 strings out of 476683
- 790837 string characters out of 5807574
- 1863012 words of memory out of 5000000
- 56385 multiletter control sequences out of 15000+600000
+ 36641 strings out of 476683
+ 788938 string characters out of 5807574
+ 1867012 words of memory out of 5000000
+ 56312 multiletter control sequences out of 15000+600000
  519153 words of font info for 80 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 105i,12n,107p,441b,642s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 105i,11n,107p,441b,582s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on lab04.pdf (4 pages).
+Output written on lab05.pdf (3 pages).

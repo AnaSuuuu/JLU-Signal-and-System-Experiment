@@ -1,0 +1,110 @@
+%!TEX program = xelatex
+\documentclass[dvipsnames, svgnames,a4paper,11pt]{article}
+% ----------------------------------------------------
+%   吉林大学通信工程学院信号与系统实验报告
+%   原作者：Huanyu Shi，2019级
+%     知乎：https://www.zhihu.com/people/za-ran-zhu-fu-liu-xing
+%     Github：https://github.com/huanyushi/SYSU-SPA-Labreport-Template
+%   在原基础上魔改了一些，更加贴近吉林大学实验格式。
+% ----------------------------------------------------
+
+\input{Settings} % 导入模板的相关设置
+\usepackage{lipsum}
+
+
+%---------------------------------------------------------------------
+%	正文
+%---------------------------------------------------------------------
+
+\begin{document}
+
+\begin{table}
+  \raggedleft
+	\renewcommand\arraystretch{1.7}
+	\begin{tabular}{|c|p{4em}|}
+	\hline
+	成绩 &  \\
+	\hline
+	教师签字 &   \\
+	\hline
+	\end{tabular}
+\end{table}
+
+\begin{center}
+	{\kaishu \LARGE   \quad  \quad 通  \quad 信  \quad 工  \quad 程  \quad 学  \quad 院 }
+  \newline
+  \newline
+  \newline
+  \newline
+  \newline
+  {\kaishu \Huge 实 \quad  \quad  \quad 验  \quad  \quad  \quad 报 \quad  \quad  \quad 告}
+  \newline
+  \newline
+  \newline
+  \newline
+  \newline
+  {\songti \Huge  ( \quad  信  \quad 号  \quad 与  \quad 系  \quad 统 \quad)}
+  \newline
+  \newline
+  \newline
+  \newline
+  \newline
+  {\songti  \LARGE 实验题目：信号的采样与恢复  \quad  \quad \quad}
+\end{center}
+
+
+
+\begin{table}[b]
+	\renewcommand\arraystretch{1.7}
+	\begin{tabularx}{\textwidth}{|X|X|X|X|}
+	\hline
+	专业：& 通信工程 &年级：& 2022级\\
+	\hline
+	姓名：& 苏睿杰  & 学号：& 20220826\\
+	\hline
+	实验时间：& 2023年11月3日 & 班级：& 42 \\
+	\hline
+	\end{tabularx}
+\end{table}
+
+
+%\clearpage
+%\tableofcontents
+
+\clearpage
+\setcounter{section}{0}
+\section{实验二十一 \quad 信号的采样与恢复}
+\subsection*{一、实验目的}
+\begin{enumerate}
+  \item 掌握低通滤波电路的通频带的测量方法。
+  \item 了解电信号的采样方法与过程及信号的恢复。
+  \item 验证采样定理。
+\end{enumerate}
+
+\subsection*{二、实验仪器}
+\begin{enumerate}
+  \item 信号与系统实验箱一台
+  \item 数宇示波器一台
+  \item 数宇信号发生器
+  \item 交流毫伏表
+\end{enumerate}
+
+\subsection*{三、实验原理}
+
+\begin{enumerate}
+  \item 离散时间信号可以从离散信号源获得，也可以从连续时间信号采样而得。采样信号 $f_s(t)$ 可以看成连续信号 $f(t)$ 和一组开关函数 $s(t)$ 的乘积。$s(t)$ 是一组周期性窄脉冲。对采样信号进行傅立叶分析可知，采样信号的频率包括了原连续信号以及无限个经过平移的原信号频率。平移的频率等于采样频率 $f_s$ 及其谐波频率 $2f_s$、$3f_s$...。
+  \item 抽样信号在一定条件下可以恢复原来的信号，只要用一截上频率等于原信号频谱中最高频率 $f_n$ 的低通滤波器，滤除高频分量,经滤波后得到的信号包含了原信号频谱的全部内容，即低通滤波器的输出可以得到恢复后的信号。
+  \item 原信号得以恢复的条件是 $f_s \ge 2B$，其中 $f_s$ 为采样频率，$B$ 为原信号占有的频带宽度。$f_{min}=2B$ 为最低采样频率。当 $f_s < 2B$ 时，采样信号的频谱会发生混叠；所以无法用低通滤波器获得原信号频谱的全部内容。在实际使用时，仅包含有限频率的信号是极少的，因此即使 $f_s=2B$，恢复后的信号失真还是难免的。
+  
+  实验中选用 $f_s<2B$，$f_s=2B$，$f_s>2B$ 三种抽样频率对连续信号进行采样，以验证采样定理。要使信号采样后能不失真的还原，采样频率 $f_s$ 必领远大于信号频率中最高频率的两倍。采样频率一般为信号频率四倍以上。
+  \item 为了实现对连续信号的采样和对采样信号的复原，可用实验原理框图1所示。除选用足够高的采样频率外，常采用前置低通滤波器来防止信号频谱过宽而造成采样后信号频谱的混叠。
+\end{enumerate}
+
+\subsection*{四、实验内容与步骤}
+\begin{enumerate}
+  \item 输入信号为 $5KHz$ 的方波信号，$V_{p-p} = 2V$，观察抽样后离散方波信号的波形并用通过信号系统实验箱的低通滤波电路观察恢复后的信号波形。
+  \item 测出信号系统实验箱上的低通滤波电路的通频带见图2，在不失真的条件下选择合适的输入信号的频率，并且选择合适的采样脉冲的频率进行抽样，再送到下述滤波电路中进行恢复记录并观察波形。
+\end{enumerate}
+
+
+\end{document}

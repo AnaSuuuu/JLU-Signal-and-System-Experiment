@@ -1,0 +1,101 @@
+%!TEX program = xelatex
+\documentclass[dvipsnames, svgnames,a4paper,11pt]{article}
+% ----------------------------------------------------
+%   吉林大学通信工程学院信号与系统实验报告
+%   原作者：Huanyu Shi，2019级
+%     知乎：https://www.zhihu.com/people/za-ran-zhu-fu-liu-xing
+%     Github：https://github.com/huanyushi/SYSU-SPA-Labreport-Template
+%   在原基础上魔改了一些，更加贴近吉林大学实验格式。
+% ----------------------------------------------------
+
+\input{Settings} % 导入模板的相关设置
+\usepackage{lipsum}
+
+
+%---------------------------------------------------------------------
+%	正文
+%---------------------------------------------------------------------
+
+\begin{document}
+
+\begin{table}
+  \raggedleft
+	\renewcommand\arraystretch{1.7}
+	\begin{tabular}{|c|p{4em}|}
+	\hline
+	成绩 &  \\
+	\hline
+	教师签字 &   \\
+	\hline
+	\end{tabular}
+\end{table}
+
+\begin{center}
+	{\kaishu \LARGE   \quad  \quad 通  \quad 信  \quad 工  \quad 程  \quad 学  \quad 院 }
+  \newline
+  \newline
+  \newline
+  \newline
+  \newline
+  {\kaishu \Huge 实 \quad  \quad  \quad 验  \quad  \quad  \quad 报 \quad  \quad  \quad 告}
+  \newline
+  \newline
+  \newline
+  \newline
+  \newline
+  {\songti \Huge  ( \quad  信  \quad 号  \quad 与  \quad 系  \quad 统 \quad)}
+  \newline
+  \newline
+  \newline
+  \newline
+  \newline
+  {\songti  \LARGE 实验题目：非正弦周期信号的分解与合成  \quad  \quad \quad}
+\end{center}
+
+
+
+\begin{table}[b]
+	\renewcommand\arraystretch{1.7}
+	\begin{tabularx}{\textwidth}{|X|X|X|X|}
+	\hline
+	专业：& 通信工程 &年级：& 2022级\\
+	\hline
+	姓名：& 苏睿杰  & 学号：& 20220826\\
+	\hline
+	实验时间：& 2023年11月3日 & 班级：& 42 \\
+	\hline
+	\end{tabularx}
+\end{table}
+
+
+%\clearpage
+%\tableofcontents
+
+\clearpage
+\setcounter{section}{0}
+\section{实验十六 \quad 非正弦周期信号的分解与合成}
+\subsection*{一、实验目的}
+\begin{enumerate}
+  \item 用实验方法观测非正弦周期信号的分解，并与其傅利叶级数各项的频率与系数作比较。 
+  \item 观测基波和其谐波的合成。
+\end{enumerate}
+
+\subsection*{二、仪器设备}
+\begin{enumerate}
+  \item 实验箱一台。
+  \item 数字示波器。
+\end{enumerate}
+
+\subsection*{三、原理说明}
+任何信号都是由各种不同频率、幅度和初相的正弦波叠加而成的。由非正弦周期信号傅里叶级数展开式可知，各次谐波为基波频率的整数倍。而第一个非周期信号包含了从零到无穷大的所有频率成分，其幅度将随谐波次数的增高而减小，直至无穷小，将被测信号加到分别调谐于其基波和各次谐波频率的电路上。从每一带通滤器的输出端可以用示波器观察到相应频率的正弦波。本实验所用的被测信号是选用 $50Hz$ 的方波、矩形波、三角波、全波和半波等。
+
+\subsection*{四、实验内容及步骤}
+\begin{enumerate}
+  \item 调节函数信号发生器，使其输出为 $50Hz$ 方波。将其接至该实验模块的输入端，再细调函数信号发生器的输出，使 $50Hz$（基波）的 BPF 模块有最大的输出。然后，将各带通滤波器的输出分别接至示波器和交流亳伏表，观测各次谐波的频率和幅度，并记录之。
+  \item 将方波分解所得的基波和三次谐波分量接至加法器的相应输入端，观测加法器的输出波形，并记录所得的波形。
+  \item 再将方波的五次谐波分量加到加法器的相应输入端，观测相加后的波形，记录之。
+  \item 分别输入 $50Hz$ 的矩形波、三角波、全波和半波信号，并分别观测谐波分量，记录波形的幅值及频率。
+  \item 在加法器的输入端接入相应的各谐波分量，进行信号的合成实验，观察频率失真，并记录结果。
+\end{enumerate}
+
+\end{document}
