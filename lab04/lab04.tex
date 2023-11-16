@@ -146,9 +146,32 @@
 
   \item 有效频带宽度：严格地说，周期性信号所包含的谐波分量有无限多，不过由于谐波振幅随频率增高而减小，通常只考虑频率较低的一些分量就够了。从 $0$ 频率到需要考虑最高次谐波频率间的频段称为信号的频带宽度。信号频带宽度的具体定义视情况而定，有时将谐波振幅下降到最大值的 $\dfrac{1}{K}$（例如 $\dfrac{1}{10}$）的频段称为信号的频带宽度。本实验对于周期正弦信号频率为 $25KHz$，从频谱图可以看出，该信号为单频信号，抽样脉冲控制信号频率 $f_s$ 取 $5OKHz$。对于周期方波和三角波信号，若其基频率为 $5KHz$，从频谱图可以看出，可取 $5$ 倍于基波频率作为有效的频带宽度，则抽样脉冲控制信号的频率 $f_s$ 取 $50KHz$。
   
+  \item 理论计算：在理论情况下，对于给定的方波 $f(t)$（频率为 $5kHz$）以及周期矩形脉冲 $s(t)$（频率为 $100kHz$），可以计算出 $f(t)$ 和 $s(t)$ 的幅度谱函数，对于取样信号 $f_s(t) = f(t)s(t)$，同样可以计算出 $f_s(t)$ 的幅度谱函数（太过复杂，较难算出，在这里不列出来了），下式是自己计算的 $F(j\omega)$ 和 $S(j\omega)$ 的理论结果。
+    \begin{equation}
+      F(j\omega) = \sum_{n = 1}^{\infty}\dfrac{2}{jn}[1 - (-1)^n][\delta(\omega - n\dfrac{2\pi}{T}) - \delta(\omega + n\dfrac{2\pi}{T})]
+    \end{equation}
+    \begin{equation}
+      S(j\omega) = \sum_{-\infty}^{+\infty}\dfrac{1}{nj}[1 - e^{-jn\frac{2\pi}{T}\tau}] \delta(\omega - n\dfrac{2\pi}{T})
+    \end{equation}
+    \begin{equation}
+      \mathscr{F}[f_s(t)] = \dfrac{1}{2\pi}F(j\omega) * S(j\omega)
+    \end{equation}
+  \begin{figure}[htbp]
+    \centering
+    \subfloat[]{
+      \includegraphics[width=1.0\textwidth]{11.png}
+    }
+    \caption{$f(t), s(t), f_s(t)$ 的波形图以及幅度谱}
+  \end{figure}
 \end{enumerate}
 
-\subsection*{四、实验内容与步骤}
+\subsection*{四、实验注意事项}
+\begin{enumerate}
+  \item 只有当取样脉冲的频率与被取样信号1频率保持整数倍数关系时，示波器上才能得到稳定的波形，故需微调脉冲的频率。
+  \item 被取样信号的幅度不宜过大。否则将得不到良好的离散信号。
+\end{enumerate}
+
+\subsection*{五、实验内容与步骤}
 \begin{enumerate}
   \item 输入信号为 $5KHz$ 的方波信号，$V_{p-p} = 2V$，观察抽样后离散方波信号的波形并测绘出其频谱图。
   \begin{enumerate}
@@ -157,13 +180,15 @@
       \renewcommand\arraystretch{1.7}
       \centering
       \caption{}
-      \begin{tabularx}{\textwidth}{|p{0.2\textwidth}|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|}
+      \begin{tabularx}{\textwidth}{|p{0.06\textwidth}|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|}
         \hline
         f(kHz) & 5 & 15 & 25 & 35 & 45 & 55 & 65 & 75 & 85 & 95 & 105 & 115 & 125 & 135 & 145 \\
         \hline
-        Pn(dB) &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+        Pn(dB) & \tiny{-7.4}	& \tiny{-17.5}	& \tiny{-23}	& \tiny{-26.7}	& \tiny{-30.4}	& \tiny{-31.1}	& \tiny{-30.4}	& \tiny{-25.5}	& \tiny{-20.6}	& \tiny{-10.6}	& \tiny{-10.6}	& \tiny{-20.6}	& \tiny{-25.7}	& \tiny{-31}	& \tiny{-33.8}
+        \\
         \hline
-        Un &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \\
+        Un & 0.33 & 0.10 & 0.05	& 0.04 & 0.02	& 0.02 & 0.02 & 0.04 & 0.07	& 0.23 & 0.23	& 0.072	& 0.04 & 0.02	& 0.02
+        \\
         \hline
       \end{tabularx}
     \end{table}
@@ -173,13 +198,62 @@
     \item[(2)] 调整 $f(t)$ 和 $s(t)$ 的频率，使抽样信号通过滤波器后能较好地复原。
     \item[(3)] 改变抽样频率为 $f_s < 2B$ 和 $f_s \ge 2B$，观察并描绘复原后的信号，比较其失真程度。
   \end{enumerate}
+  \item 根据实验所得数据作出了频谱图，如下图所示：
+    \begin{figure}[htbp]
+      \centering
+      \subfloat[]{
+        \includegraphics[width=0.8\textwidth]{6.png}
+      }
+      \caption{抽样后离散信号 $f_s(t)$ 的频谱}
+    \end{figure}
+  \item 分别改变抽样频率 $f_s$，并观察复原后信号的失真程度。
+    
+    根据信号频带宽度的定义，一般取谐波下降到最大值的 $\dfrac{1}{10}$ 左右的频段作为带宽。对于方波，$n$ 取不到 $10$，故令 $n = 9$，对应 $B = 5 \times 9 = 45kHz$。
+
+    根据抽样定理，要使抽样信号无失真的还原，须使抽样频率以最高频率的两倍为临界点，故将 $2B = 90kHz$ 作为是否失真的临界状态。
+    
+    故接下来的实验会分别让 $f_s < 2B$，$f_s = 2B$，$f_s > 2B$ 来进行实验。
+    \begin{enumerate}
+      \item $f_s < 2B$，此时 $f_s = 60 kHz$，如图7所示。
+        \begin{figure}[htbp]
+          \centering
+          \subfloat[]{
+            \includegraphics[width=0.8\textwidth]{9.png}
+          }
+          \caption{抽样频率 $f_s < 2B$ 的复原信号}
+        \end{figure}
+      \item $f_s = 2B$，此时 $f_s = 90 kHz$，如图8所示。
+        \begin{figure}[htbp]
+          \centering
+          \subfloat[]{
+            \includegraphics[width=0.8\textwidth]{8.png}
+          }
+          \caption{抽样频率 $f_s > 2B$ 的复原信号}
+        \end{figure}
+      \newpage
+      \item $f_s > 2B$，此时 $f_s = 130 kHz$，如图9所示。
+        \begin{figure}[htbp]
+          \centering
+          \subfloat[]{
+            \includegraphics[width=0.8\textwidth]{7.png}
+          }
+          \caption{抽样频率 $f_s > 2B$ 的复原信号}
+        \end{figure}
+    \end{enumerate}
 \end{enumerate}
 
-\subsection*{五、实验注意事项}
+\subsection*{六、误差分析}
 \begin{enumerate}
-  \item 只有当取样脉冲的频率与被取样信号1频率保持整数倍数关系时，示波器上才能得到稳定的波形，故需微调脉冲的频率。
-  \item 被取样信号的幅度不宜过大。否则将得不到良好的离散信号。
+  \item 由于实验仪器参数和理论值有所误差，故所得数据可能会和理论不同。
+  \item 在使用电平表读数时，肉眼观察可能存在一定误差，会与理论有一定偏差。
 \end{enumerate}
 
+\subsection*{七、实验结论及总结}
+\begin{enumerate}
+  \item $f_s(t)$ 的频谱图随频率增大振幅逐渐减小，与理论情况大致相等。
+  \item 当抽样频率 $f_s < 2B$ 时，此时复原后的函数失真较为严重，所得图像与 $f(t)$ 之间的误差较大。
+  \item 当抽样频率 $f_s = 2B$ 时，此时复原后的函数有一定失真，但比 $f_s < 2B$ 时要好很多，所得图像已经较为接近 $f(t)$。
+  \item 当抽样频率 $f_s > 2B$ 时，此时复原后的函数几乎没有失真，所等图像与 $f(t)$ 最为接近，复原程度最好，最接近方波。
+\end{enumerate}
 
 \end{document}

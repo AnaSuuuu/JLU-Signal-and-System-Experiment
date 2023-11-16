@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.10.28)  13 NOV 2023 10:26
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.10.28)  16 NOV 2023 22:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -851,7 +851,10 @@ Package: xeCJK-listings 2022/08/05 v3.9.1 xeCJK patch file for listings
 \l__xeCJK_listings_flag_int=\count375
 ) (d:/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
-)) (d:/texlive/2023/texmf-dist/tex/latex/lipsum/lipsum.sty (d:/texlive/2023/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+)) (d:/texlive/2023/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup6
+) (d:/texlive/2023/texmf-dist/tex/latex/lipsum/lipsum.sty (d:/texlive/2023/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2023-02-02 LaTeX2e option processing using LaTeX3 keys
 )
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
@@ -885,7 +888,7 @@ LaTeX Font Info:    ... okay on input line 19.
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
-\symlegacymaths=\mathgroup6
+\symlegacymaths=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
 (Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 19.
 LaTeX Font Info:    Redeclaring math accent \acute on input line 19.
@@ -991,6 +994,10 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 24.
  (d:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 24.
+ (d:/texlive/2023/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
 
 Package fontspec Info: Could not resolve font "KaiTi/BI" (it probably doesn't
 (fontspec)             exist).
@@ -1089,28 +1096,91 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [3]
-Overfull \hbox (2.36357pt too wide) in paragraph at lines 168--168
-[]|\TU/lmr/m/n/10.95 105| 
+File: ./images//11.png Graphic file (type bmp)
+<./images//11.png>
+
+Overfull \hbox (7.2927pt too wide) in paragraph at lines 163--164
+ [][] 
  []
 
 
-Overfull \hbox (2.36357pt too wide) in paragraph at lines 168--168
-[]|\TU/lmr/m/n/10.95 115| 
+Overfull \hbox (5.17732pt too wide) in paragraph at lines 193--193
+[]|\TU/lmr/m/n/10.95 Pn(dB)| 
  []
 
 
-Overfull \hbox (2.36357pt too wide) in paragraph at lines 168--168
-[]|\TU/lmr/m/n/10.95 125| 
+Overfull \hbox (0.62762pt too wide) in paragraph at lines 193--193
+[]|\TU/lmr/m/n/10.95 0.33| 
  []
 
 
-Overfull \hbox (2.36357pt too wide) in paragraph at lines 168--168
-[]|\TU/lmr/m/n/10.95 135| 
+Overfull \hbox (0.62762pt too wide) in paragraph at lines 193--193
+[]|\TU/lmr/m/n/10.95 0.10| 
  []
 
 
-Overfull \hbox (2.36357pt too wide) in paragraph at lines 168--168
-[]|\TU/lmr/m/n/10.95 145| 
+Overfull \hbox (0.62762pt too wide) in paragraph at lines 193--193
+[]|\TU/lmr/m/n/10.95 0.05| 
+ []
+
+
+Overfull \hbox (0.62762pt too wide) in paragraph at lines 193--193
+[]|\TU/lmr/m/n/10.95 0.04| 
+ []
+
+
+Overfull \hbox (0.62762pt too wide) in paragraph at lines 193--193
+[]|\TU/lmr/m/n/10.95 0.02| 
+ []
+
+
+Overfull \hbox (0.62762pt too wide) in paragraph at lines 193--193
+[]|\TU/lmr/m/n/10.95 0.02| 
+ []
+
+
+Overfull \hbox (0.62762pt too wide) in paragraph at lines 193--193
+[]|\TU/lmr/m/n/10.95 0.02| 
+ []
+
+
+Overfull \hbox (0.62762pt too wide) in paragraph at lines 193--193
+[]|\TU/lmr/m/n/10.95 0.04| 
+ []
+
+
+Overfull \hbox (0.62762pt too wide) in paragraph at lines 193--193
+[]|\TU/lmr/m/n/10.95 0.07| 
+ []
+
+
+Overfull \hbox (0.62762pt too wide) in paragraph at lines 193--193
+[]|\TU/lmr/m/n/10.95 0.23| 
+ []
+
+
+Overfull \hbox (0.62762pt too wide) in paragraph at lines 193--193
+[]|\TU/lmr/m/n/10.95 0.23| 
+ []
+
+
+Overfull \hbox (6.10262pt too wide) in paragraph at lines 193--193
+[]|\TU/lmr/m/n/10.95 0.072| 
+ []
+
+
+Overfull \hbox (0.62762pt too wide) in paragraph at lines 193--193
+[]|\TU/lmr/m/n/10.95 0.04| 
+ []
+
+
+Overfull \hbox (0.62762pt too wide) in paragraph at lines 193--193
+[]|\TU/lmr/m/n/10.95 0.02| 
+ []
+
+
+Overfull \hbox (0.62762pt too wide) in paragraph at lines 193--193
+[]|\TU/lmr/m/n/10.95 0.02| 
  []
 
 
@@ -1120,17 +1190,51 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[4] (./lab04.aux)
+[4]
+File: ./images//6.png Graphic file (type bmp)
+<./images//6.png>
+File: ./images//9.png Graphic file (type bmp)
+<./images//9.png>
+File: ./images//8.png Graphic file (type bmp)
+<./images//8.png>
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[5]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[6]
+File: ./images//7.png Graphic file (type bmp)
+<./images//7.png>
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[7] (./lab04.aux)
 Package rerunfilecheck Info: File `lab04.out' has not changed.
 (rerunfilecheck)             Checksum: 1703121C35C3ACA61EEEC6097059466A;147.
  ) 
 Here is how much of TeX's memory you used:
- 36724 strings out of 476683
- 790837 string characters out of 5807574
- 1863012 words of memory out of 5000000
- 56385 multiletter control sequences out of 15000+600000
- 519153 words of font info for 80 fonts, out of 8000000 for 9000
+ 36829 strings out of 476683
+ 793412 string characters out of 5807574
+ 1868012 words of memory out of 5000000
+ 56476 multiletter control sequences out of 15000+600000
+ 519647 words of font info for 83 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 105i,12n,107p,441b,642s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 105i,12n,107p,441b,682s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on lab04.pdf (4 pages).
+Output written on lab04.pdf (7 pages).
