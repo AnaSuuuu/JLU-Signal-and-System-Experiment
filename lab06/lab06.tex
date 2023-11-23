@@ -10,6 +10,7 @@
 
 \input{Settings} % 导入模板的相关设置
 \usepackage{lipsum}
+\usepackage{amsmath}
 
 
 %---------------------------------------------------------------------
@@ -62,7 +63,7 @@
 	\hline
 	姓名：& 苏睿杰  & 学号：& 20220826\\
 	\hline
-	实验时间：& 2023年11月3日 & 班级：& 42 \\
+	实验时间：& 2023年11月24日 & 班级：& 42 \\
 	\hline
 	\end{tabularx}
 \end{table}
@@ -89,7 +90,117 @@
 \subsection*{三、原理说明}
 任何信号都是由各种不同频率、幅度和初相的正弦波叠加而成的。由非正弦周期信号傅里叶级数展开式可知，各次谐波为基波频率的整数倍。而第一个非周期信号包含了从零到无穷大的所有频率成分，其幅度将随谐波次数的增高而减小，直至无穷小，将被测信号加到分别调谐于其基波和各次谐波频率的电路上。从每一带通滤器的输出端可以用示波器观察到相应频率的正弦波。本实验所用的被测信号是选用 $50Hz$ 的方波、矩形波、三角波、全波和半波等。
 
-\subsection*{四、实验内容及步骤}
+\subsection*{四、理论值的计算}
+\begin{figure}[htbp]
+  \centering
+  \begin{minipage}[t]{0.48\textwidth}
+  \centering
+  \includegraphics[width=9cm]{1.png}
+  \caption{全波整流信号}
+  \end{minipage}
+  \begin{minipage}[t]{0.48\textwidth}
+  \centering
+  \includegraphics[width=9cm]{2.png}
+  \caption{半波整流信号}
+  \end{minipage}
+\end{figure}
+
+\begin{enumerate}
+  \item 基频为50Hz的方波的谐波型傅里叶级数
+    
+    将方波信号的傅里叶级数展开：
+
+    \begin{equation*}
+      f(t) = a_0 + \sum_{n = 1}^{\infty} \left [ a_n \cos (n\omega t) + b_n \sin (n\omega t) \right ]
+    \end{equation*}
+
+    利用公式可算得
+
+    \begin{align*}
+      & a_0 = \dfrac{1}{T}\int_{0}^{T}f(t)dt = 0 \\
+      & a_n = \dfrac{2}{T}\int_{0}^{T}f(t)\cos (n\omega t)dt = 0 \\
+      & b_n = \dfrac{2}{T}\int_{0}^{T}f(t)\sin (n\omega t)dt = \dfrac{4}{n\pi}\sin^2 (\dfrac{n\pi}{2})
+    \end{align*}
+      
+    又由于
+
+    \begin{align*}
+      & A_n = \sqrt{a_n^2 + b_n^2} = \dfrac{4}{n\pi}\sin^2 (\dfrac{n\pi}{2})\\
+      & \varphi_n = -\arctan (\dfrac{b_n}{a_n}) = -\dfrac{\pi}{2}
+    \end{align*}
+      
+    最后可得到
+
+    \begin{equation*}
+      f(t) = \sum_{i = 1}^{\infty} \dfrac{4}{n\pi}\sin^2 (\dfrac{n\pi}{2}) \cos(n\omega t -\dfrac{\pi}{2})
+    \end{equation*}
+
+  \item 基频为50Hz的三角波的谐波型傅里叶级数
+  
+  将三角波信号的傅里叶级数展开：
+
+  \begin{equation*}
+    f(t) = a_0 + \sum_{n = 1}^{\infty} \left [ a_n \cos (n\omega t) + b_n \sin (n\omega t) \right ]
+  \end{equation*}
+
+  利用公式可算得
+
+  \begin{align*}
+    & a_0 = \dfrac{1}{T}\int_{0}^{T}f(t)dt = 0 \\
+    & a_n = \dfrac{2}{T}\int_{0}^{T}f(t)\cos (n\omega t)dt = 0 \\
+    & b_n = \dfrac{2}{T}\int_{0}^{T}f(t)\sin (n\omega t)dt = \dfrac{8}{(n\pi)^2}\sin (\dfrac{n\pi}{2})
+  \end{align*}
+    
+  又由于
+
+  \begin{align*}
+    & A_n = \sqrt{a_n^2 + b_n^2} = \dfrac{8}{(n\pi)^2}\sin (\dfrac{n\pi}{2})\\
+    & \varphi_n = -\arctan (\dfrac{b_n}{a_n}) = -\dfrac{\pi}{2}
+  \end{align*}
+    
+  最后可得到
+
+  \begin{equation*}
+    f(t) = \sum_{i = 1}^{\infty} \dfrac{8}{(n\pi)^2}\sin (\dfrac{n\pi}{2})\cos(n\omega t - \dfrac{\pi}{2}) 
+  \end{equation*}
+
+
+  \item 基频为50Hz的锯齿波的谐波型傅里叶级数
+
+  将锯齿波信号的傅里叶级数展开：
+
+  \begin{equation*}
+    f(t) = a_0 + \sum_{n = 1}^{\infty} \left [ a_n \cos (n\omega t) + b_n \sin (n\omega t) \right ]
+  \end{equation*}
+
+  利用公式可算得
+
+  \begin{align*}
+    & a_0 = \dfrac{1}{T}\int_{0}^{T}f(t)dt = \dfrac{1}{2} \\
+    & a_n = \dfrac{2}{T}\int_{0}^{T}f(t)\cos (n\omega t)dt = \dfrac{2}{n^2\omega^2 T^2} [1 - \cos(n\omega T)] = 0 \\
+    & b_n = \dfrac{2}{T}\int_{0}^{T}f(t)\sin (n\omega t)dt = \dfrac{1}{n\pi}
+  \end{align*}
+    
+  又由于
+
+  \begin{align*}
+    & A_n = \sqrt{a_n^2 + b_n^2} = \dfrac{1}{n\pi}\\
+    & \varphi_n = -\arctan (\dfrac{b_n}{a_n}) = -\dfrac{\pi}{2}
+  \end{align*}
+    
+  最后可得到
+
+  \begin{equation*}
+    f(t) = \dfrac{1}{2} + \sum_{i = 1}^{\infty} \dfrac{4}{n\omega T}\sin (\dfrac{n\omega T}{2}) \cos(n\omega t - \dfrac{n\omega \tau}{2})
+  \end{equation*}
+
+
+
+\end{enumerate}
+
+
+
+\subsection*{五、实验内容及步骤}
 \begin{enumerate}
   \item 调节函数信号发生器，使其输出为 $50Hz$ 方波。将其接至该实验模块的输入端，再细调函数信号发生器的输出，使 $50Hz$（基波）的 BPF 模块有最大的输出。然后，将各带通滤波器的输出分别接至示波器和交流亳伏表，观测各次谐波的频率和幅度，并记录之。
   \item 将方波分解所得的基波和三次谐波分量接至加法器的相应输入端，观测加法器的输出波形，并记录所得的波形。
