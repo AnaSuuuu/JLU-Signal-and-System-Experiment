@@ -129,7 +129,7 @@
 \newpage
 \subsection*{五、数据记录与处理}
   \begin{enumerate}
-    \item 输入信号为频率 $1kHz$，峰峰值为 $2V_{pp}$ 的方波。采样信号为频率可调的周期矩形脉冲。
+    \item 输入信号为频率1kHz，峰峰值为$2V_{pp}$的方波。采样信号为频率可调的周期矩形脉冲。
       \begin{figure}[htbp]
         \centering
         \subfloat[]{
@@ -138,7 +138,7 @@
         \subfloat[]{
           \includegraphics[width=0.5\textwidth]{6.png}
         }
-        \caption{输入方波波形以及采样信号}
+        \caption{输入方波波形以及采样信号，带宽 B = 9kHz}
       \end{figure}
       \begin{figure}[htbp]
         \centering
@@ -156,14 +156,14 @@
       \end{figure}
       
       \begin{enumerate}
-        \item 选取抽样频率 $fs = 30kHz$，得到恢复后的信号如图 5.a，其中恢复后的 $V_{pp} = 5.36V,f = 999.5Hz$。
-        \item 选取抽样频率 $fs = 18kHz$，得到恢复后的信号如图 5.b，其中恢复后的 $V_{pp} = 5.68V,f = 997.5Hz$。
-        \item 选取抽样频率 $fs = 10kHz$，得到恢复后的信号如图 5.c，其中恢复后的 $V_{pp} = 7.04,f = 992.1Hz$。
+        \item 选取抽样频率 $fs = 30kHz > 2B$，得到恢复后的信号如图 5.a，其中恢复后的 $V_{pp} = 5.36V,f = 999.5Hz$。
+        \item 选取抽样频率 $fs = 18kHz = 2B$，得到恢复后的信号如图 5.b，其中恢复后的 $V_{pp} = 5.68V,f = 997.5Hz$。
+        \item 选取抽样频率 $fs = 10kHz < 2B$，得到恢复后的信号如图 5.c，其中恢复后的 $V_{pp} = 7.04,f = 992.1Hz$。
       \end{enumerate}
 
 
     \newpage
-    \item 输入信号为频率 $1kHz$，峰峰值为 $2V_{pp}$ 的三角波。采样信号为频率可调的周期矩形脉冲。
+    \item 输入信号为频率 1kHz，峰峰值为 $2V_{pp}$ 的三角波。采样信号为频率可调的周期矩形脉冲。
       \begin{figure}[htbp]
         \centering
         \subfloat[]{
@@ -172,7 +172,7 @@
         \subfloat[]{
           \includegraphics[width=0.5\textwidth]{6.png}
         }
-        \caption{输入三角波波形以及采样信号}
+        \caption{输入三角波波形以及采样信号，带宽 B = 3kHz}
       \end{figure}
       \begin{figure}[htbp]
         \centering
@@ -190,9 +190,9 @@
       \end{figure}
 
       \begin{enumerate}
-        \item 选取抽样频率 $fs = 25kHz$，得到恢复后的信号如图 7.a，其中恢复后的 $V_{pp} = 2.4V,f = 25.1kHz$。
-        \item 选取抽样频率 $fs = 6kHz$，得到恢复后的信号如图 7.b，其中恢复后的 $V_{pp} = 8.48V,f = 6.081kHz$。
-        \item 选取抽样频率 $fs = 4kHz$，得到恢复后的信号如图 7.c，其中恢复后的 $V_{pp} = 10.2V,f = 4.029kHz$。
+        \item 选取抽样频率 $fs = 25kHz > 2B$，得到恢复后的信号如图 7.a，其中恢复后的 $V_{pp} = 2.4V,f = 25.1kHz$。
+        \item 选取抽样频率 $fs = 6kHz = 2B$，得到恢复后的信号如图 7.b，其中恢复后的 $V_{pp} = 8.48V,f = 6.081kHz$。
+        \item 选取抽样频率 $fs = 4kHz < 2B$，得到恢复后的信号如图 7.c，其中恢复后的 $V_{pp} = 10.2V,f = 4.029kHz$。
       \end{enumerate}
     
     \newpage
@@ -205,7 +205,7 @@
         \subfloat[]{
           \includegraphics[width=0.5\textwidth]{6.png}
         }
-        \caption{输入锯齿波波形以及采样信号}
+        \caption{输入锯齿波波形以及采样信号，带宽 B = 10kHz}
       \end{figure}
       \begin{figure}[htbp]
         \centering
@@ -223,9 +223,9 @@
       \end{figure}
 
       \begin{enumerate}
-        \item 选取抽样频率 $fs = 130kHz$，得到恢复后的信号如图 9.a，其中恢复后的 $V_{pp} = 0.92V,f = 1.004kHz$。
-        \item 选取抽样频率 $fs = 20kHz$，得到恢复后的信号如图 9.b，其中恢复后的 $V_{pp} = 1.14V,f = 990.2Hz$。
-        \item 选取抽样频率 $fs = 4kHz$，得到恢复后的信号如图 9.c，其中恢复后的 $V_{pp} = 1.66V,f = 1.007kHz$。
+        \item 选取抽样频率 $fs = 130kHz > 2B$，得到恢复后的信号如图 9.a，其中恢复后的 $V_{pp} = 0.92V,f = 1.004kHz$。
+        \item 选取抽样频率 $fs = 20kHz = 2B$，得到恢复后的信号如图 9.b，其中恢复后的 $V_{pp} = 1.14V,f = 990.2Hz$。
+        \item 选取抽样频率 $fs = 4kHz < 2B$，得到恢复后的信号如图 9.c，其中恢复后的 $V_{pp} = 1.66V,f = 1.007kHz$。
       \end{enumerate}
 
   \end{enumerate}
