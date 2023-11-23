@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.10.28)  10 NOV 2023 10:13
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.10.28)  23 NOV 2023 12:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1053,6 +1053,17 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.95pt
 (hyperref)                replaced by space on input line 76.
 
+File: ./images//1.png Graphic file (type bmp)
+<./images//1.png>
+File: ./images//2-a.png Graphic file (type bmp)
+<./images//2-a.png>
+File: ./images//2-b.png Graphic file (type bmp)
+<./images//2-b.png>
+
+Overfull \hbox (10.24518pt too wide) in paragraph at lines 123--124
+ [][] 
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1070,17 +1081,109 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[3] (./lab05.aux)
+[3]
+File: ./images//3.png Graphic file (type bmp)
+<./images//3.png>
+File: ./images//6.png Graphic file (type bmp)
+<./images//6.png>
+
+Overfull \hbox (14.58539pt too wide) in paragraph at lines 137--141
+ [][][][] 
+ []
+
+File: ./images//3-1.png Graphic file (type bmp)
+<./images//3-1.png>
+File: ./images//3-2.png Graphic file (type bmp)
+<./images//3-2.png>
+
+Overfull \hbox (14.58539pt too wide) in paragraph at lines 147--151
+ [][][][] 
+ []
+
+File: ./images//3-3.png Graphic file (type bmp)
+<./images//3-3.png>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[4]
+File: ./images//4.png Graphic file (type bmp)
+<./images//4.png>
+File: ./images//6.png Graphic file (type bmp)
+<./images//6.png>
+
+Overfull \hbox (14.58539pt too wide) in paragraph at lines 171--175
+ [][][][] 
+ []
+
+File: ./images//4-1.png Graphic file (type bmp)
+<./images//4-1.png>
+File: ./images//4-2.png Graphic file (type bmp)
+<./images//4-2.png>
+
+Overfull \hbox (14.58539pt too wide) in paragraph at lines 181--185
+ [][][][] 
+ []
+
+File: ./images//4-3.png Graphic file (type bmp)
+<./images//4-3.png>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[5]
+File: ./images//5.png Graphic file (type bmp)
+<./images//5.png>
+File: ./images//6.png Graphic file (type bmp)
+<./images//6.png>
+
+Overfull \hbox (14.58539pt too wide) in paragraph at lines 204--208
+ [][][][] 
+ []
+
+File: ./images//5-1.png Graphic file (type bmp)
+<./images//5-1.png>
+File: ./images//5-2.png Graphic file (type bmp)
+<./images//5-2.png>
+
+Overfull \hbox (14.58539pt too wide) in paragraph at lines 214--218
+ [][][][] 
+ []
+
+File: ./images//5-3.png Graphic file (type bmp)
+<./images//5-3.png>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[6]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[7] (./lab05.aux)
 Package rerunfilecheck Info: File `lab05.out' has not changed.
 (rerunfilecheck)             Checksum: 9941F6F9FD4A7502B524013B98C02BBB;163.
  ) 
 Here is how much of TeX's memory you used:
- 36641 strings out of 476683
- 788938 string characters out of 5807574
- 1867012 words of memory out of 5000000
- 56312 multiletter control sequences out of 15000+600000
- 519153 words of font info for 80 fonts, out of 8000000 for 9000
+ 36822 strings out of 476683
+ 792243 string characters out of 5807574
+ 1868012 words of memory out of 5000000
+ 56472 multiletter control sequences out of 15000+600000
+ 519161 words of font info for 81 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 105i,11n,107p,441b,582s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 105i,11n,107p,441b,608s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on lab05.pdf (3 pages).
+Output written on lab05.pdf (7 pages).

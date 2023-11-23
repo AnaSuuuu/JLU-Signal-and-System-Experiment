@@ -62,7 +62,7 @@
 	\hline
 	姓名：& 苏睿杰  & 学号：& 20220826\\
 	\hline
-	实验时间：& 2023年11月3日 & 班级：& 42 \\
+	实验时间：& 2023年11月17日 & 班级：& 42 \\
 	\hline
 	\end{tabularx}
 \end{table}
@@ -98,13 +98,148 @@
   
   实验中选用 $f_s<2B$，$f_s=2B$，$f_s>2B$ 三种抽样频率对连续信号进行采样，以验证采样定理。要使信号采样后能不失真的还原，采样频率 $f_s$ 必领远大于信号频率中最高频率的两倍。采样频率一般为信号频率四倍以上。
   \item 为了实现对连续信号的采样和对采样信号的复原，可用实验原理框图1所示。除选用足够高的采样频率外，常采用前置低通滤波器来防止信号频谱过宽而造成采样后信号频谱的混叠。
+  \begin{figure}[htbp]
+    \centering
+    \subfloat[]{
+      \includegraphics[width=0.7\textwidth]{1.png}
+    }
+    \caption{信号的采样与恢复原理框图}
+  \end{figure}
 \end{enumerate}
 
 \subsection*{四、实验内容与步骤}
 \begin{enumerate}
   \item 输入信号为 $5KHz$ 的方波信号，$V_{p-p} = 2V$，观察抽样后离散方波信号的波形并用通过信号系统实验箱的低通滤波电路观察恢复后的信号波形。
   \item 测出信号系统实验箱上的低通滤波电路的通频带见图2，在不失真的条件下选择合适的输入信号的频率，并且选择合适的采样脉冲的频率进行抽样，再送到下述滤波电路中进行恢复记录并观察波形。
+  \begin{figure}[htbp]
+    \centering
+    \begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=6cm]{2-a.png}
+    \caption{无源低通滤波器}
+    \end{minipage}
+    \begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=9cm]{2-b.png}
+    \caption{有源低通滤波器}
+    \end{minipage}
+  \end{figure}
 \end{enumerate}
 
+\newpage
+\subsection*{五、数据记录与处理}
+  \begin{enumerate}
+    \item 输入信号为频率 $1kHz$，峰峰值为 $2V_{pp}$ 的方波。采样信号为频率可调的周期矩形脉冲。
+      \begin{figure}[htbp]
+        \centering
+        \subfloat[]{
+          \includegraphics[width=0.5\textwidth]{3.png}
+        }
+        \subfloat[]{
+          \includegraphics[width=0.5\textwidth]{6.png}
+        }
+        \caption{输入方波波形以及采样信号}
+      \end{figure}
+      \begin{figure}[htbp]
+        \centering
+        \subfloat[]{
+          \includegraphics[width=0.5\textwidth]{3-1.png}
+        }
+        \subfloat[]{
+          \includegraphics[width=0.5\textwidth]{3-2.png}
+        }
+
+        \subfloat[]{
+          \includegraphics[width=0.5\textwidth]{3-3.png}
+        }
+        \caption{恢复后的方波波形}
+      \end{figure}
+      
+      \begin{enumerate}
+        \item 选取抽样频率 $fs = $，得到恢复后的信号如图 5.a，其中恢复后的 $V_{pp} = 5.36V,f = 999.5Hz$。
+        \item 选取抽样频率 $fs = 18kHz$，得到恢复后的信号如图 5.b，其中恢复后的 $V_{pp} = 5.68V,f = 997.5Hz$。
+        \item 选取抽样频率 $fs = $，得到恢复后的信号如图 5.c，其中恢复后的 $V_{pp} = 7.04,f = 992.1Hz$。
+      \end{enumerate}
+
+
+    \newpage
+    \item 输入信号为频率 $1kHz$，峰峰值为 $2V_{pp}$ 的三角波。采样信号为频率可调的周期矩形脉冲。
+      \begin{figure}[htbp]
+        \centering
+        \subfloat[]{
+          \includegraphics[width=0.5\textwidth]{4.png}
+        }
+        \subfloat[]{
+          \includegraphics[width=0.5\textwidth]{6.png}
+        }
+        \caption{输入三角波波形以及采样信号}
+      \end{figure}
+      \begin{figure}[htbp]
+        \centering
+        \subfloat[]{
+          \includegraphics[width=0.5\textwidth]{4-1.png}
+        }
+        \subfloat[]{
+          \includegraphics[width=0.5\textwidth]{4-2.png}
+        }
+
+        \subfloat[]{
+          \includegraphics[width=0.5\textwidth]{4-3.png}
+        }
+        \caption{恢复后的三角波波形}
+      \end{figure}
+
+      \begin{enumerate}
+        \item 选取抽样频率 $fs = 25kHz$，得到恢复后的信号如图 7.a，其中恢复后的 $V_{pp} = 2.4V,f = 25.1kHz$。
+        \item 选取抽样频率 $fs = 6kHz$，得到恢复后的信号如图 7.b，其中恢复后的 $V_{pp} = 8.48V,f = 6.081kHz$。
+        \item 选取抽样频率 $fs = 4kHz$，得到恢复后的信号如图 7.c，其中恢复后的 $V_{pp} = 10.2V,f = 4.029kHz$。
+      \end{enumerate}
+    
+    \newpage
+    \item 输入信号为频率 $1kHz$，峰峰值为 $2V_{pp}$ 的锯齿波。采样信号为频率可调的周期矩形脉冲。
+      \begin{figure}[htbp]
+        \centering
+        \subfloat[]{
+          \includegraphics[width=0.5\textwidth]{5.png}
+        }
+        \subfloat[]{
+          \includegraphics[width=0.5\textwidth]{6.png}
+        }
+        \caption{输入锯齿波波形以及采样信号}
+      \end{figure}
+      \begin{figure}[htbp]
+        \centering
+        \subfloat[]{
+          \includegraphics[width=0.5\textwidth]{5-1.png}
+        }
+        \subfloat[]{
+          \includegraphics[width=0.5\textwidth]{5-2.png}
+        }
+
+        \subfloat[]{
+          \includegraphics[width=0.5\textwidth]{5-3.png}
+        }
+        \caption{恢复后的锯齿波波形}
+      \end{figure}
+
+      \begin{enumerate}
+        \item 选取抽样频率 $fs = 130kHz$，得到恢复后的信号如图 9.a，其中恢复后的 $V_{pp} = 0.92V,f = 1.004kHz$。
+        \item 选取抽样频率 $fs = 20kHz$，得到恢复后的信号如图 9.b，其中恢复后的 $V_{pp} = 1.14V,f = 990.2Hz$。
+        \item 选取抽样频率 $fs = 4kHz$，得到恢复后的信号如图 9.c，其中恢复后的 $V_{pp} = 1.66V,f = 1.007kHz$。
+      \end{enumerate}
+
+  \end{enumerate}
+
+\newpage
+\subsection*{六、实验误差分析}
+\begin{enumerate}
+  \item 在上述实验中，即使取 $fs > 2B$，我们还是发现恢复后的信号与输入信号有一定差别，个别恢复信号的峰峰值和频率与输入信号差别较大。这或许是因为采样频率还是不够大，并没有达到 \textbf{远大于} 最高频率的两倍，依然造成部分采样信号的频谱混叠。
+\end{enumerate}
+\subsection*{七、实验总结与思考}
+\begin{enumerate}
+  \item 当抽样频率 $f_s < 2B$ 时，此时复原后的函数失真较为严重，所得图像与 $f(t)$ 之间的误差较大。
+  \item 当抽样频率 $f_s = 2B$ 时，此时复原后的函数有一定失真，但比 $f_s < 2B$ 时要好很多，所得图像已经较为接近输入信号。
+  \item 当抽样频率 $f_s > 2B$ 时，此时复原后的函数几乎没有失真，所等图像与 $f(t)$ 最为接近，复原程度最好，最接近输入信号。从波形上已经非常接近输出信号，但是峰峰值数据以及频率依然和输入信号有一定差别。
+\end{enumerate}
 
 \end{document}
