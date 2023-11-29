@@ -191,7 +191,7 @@
   最后可得到
 
   \begin{equation*}
-    f(t) = \dfrac{1}{2} + \sum_{i = 1}^{\infty} \dfrac{4}{n\omega T}\sin (\dfrac{n\omega T}{2}) \cos(n\omega t - \dfrac{n\omega \tau}{2})
+    f(t) = \dfrac{1}{2} + \sum_{i = 1}^{\infty} \dfrac{1}{n\pi} \cos(n\omega t - \dfrac{\pi}{2})
   \end{equation*}
 
 
@@ -207,6 +207,382 @@
   \item 再将方波的五次谐波分量加到加法器的相应输入端，观测相加后的波形，记录之。
   \item 分别输入 $50Hz$ 的矩形波、三角波、全波和半波信号，并分别观测谐波分量，记录波形的幅值及频率。
   \item 在加法器的输入端接入相应的各谐波分量，进行信号的合成实验，观察频率失真，并记录结果。
+\end{enumerate}
+
+\subsection*{六、数据记录及整理}
+\begin{enumerate}
+  \item 半波的分解和合成
+    
+    信号的分解
+    \begin{figure}[htbp]
+      \centering
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=6cm]{3.1.png}
+      \caption{基波，频率为 49.2Hz，峰峰值为 6.12V}
+      \end{minipage}
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=6cm]{3.2.png}
+      \caption{二级谐波，频率为 110.2Hz，峰峰值为 9.88V}
+      \end{minipage}
+
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=6cm]{3.3.png}
+      \caption{三级谐波，频率为 149.8Hz，峰峰值为 6.60V}
+      \end{minipage}
+      \centering
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=6cm]{3.4.png}
+      \caption{四级谐波，频率为 208.7Hz，峰峰值为 3.12V}
+      \end{minipage}
+
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=6cm]{3.5.png}
+      \caption{五级谐波，频率为 248Hz，峰峰值为 0.196V}
+      \end{minipage}
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=6cm]{3.6.png}
+      \caption{六级谐波，频率为 336Hz，峰峰值为 0.54V}
+      \end{minipage}
+
+      \begin{minipage}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=5cm]{9.png}
+        \caption{直流分量，值为-3V}
+      \end{minipage}
+    \end{figure}
+
+    \newpage
+    信号的合成
+    \begin{figure}[htbp]
+      \centering
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=7cm]{4.1.png}
+      \caption{直流和基波合成，频率为 50.01Hz，峰峰值为 6.80V}
+      \end{minipage}
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=7cm]{4.2.png}
+      \caption{直流，一，二级谐波合成，频率为 50.03Hz，峰峰值为 6.62V}
+      \end{minipage}
+
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=7cm]{4.3.png}
+      \caption{直流，一，二，三级谐波，频率为 49.87Hz，峰峰值为 6.24V}
+      \end{minipage}
+      \centering
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=7cm]{4.4.png}
+      \caption{直流，一，二，三，四级谐波，频率为 46.12Hz，峰峰值为 6.52V}
+      \end{minipage}
+
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=7cm]{4.5.png}
+      \caption{直流，一，二，三，四，五级谐波，频率为 49.99Hz，峰峰值为 6.31V}
+      \end{minipage}
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=7cm]{4.6.png}
+      \caption{直流，一，二，三，四，五，六级谐波，频率为 50.23Hz，峰峰值为 6.57V}
+      \end{minipage}
+    \end{figure}
+
+  \newpage
+
+  \item 全波的分解和合成
+  
+    信号的分解
+    \begin{figure}[htbp]
+      \centering
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=6cm]{3.1.png}
+      \caption{一级谐波，频率为 100.8Hz，峰峰值为 0.176V}
+      \end{minipage}
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=6cm]{3.2.png}
+      \caption{二级谐波，频率为 199.2Hz，峰峰值为 5.24V}
+      \end{minipage}
+
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=6cm]{3.3.png}
+      \caption{三级谐波，频率为 291.1Hz，峰峰值为 0.56V}
+      \end{minipage}
+      \centering
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=6cm]{3.4.png}
+      \caption{四级谐波，频率为 374.3Hz，峰峰值为 1.52V}
+      \end{minipage}
+
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=6cm]{3.5.png}
+      \caption{五级谐波，频率为 499.8Hz，峰峰值为 0.24V}
+      \end{minipage}
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=6cm]{3.6.png}
+      \caption{六级谐波，频率为 572.1Hz，峰峰值为 6.52V}
+      \end{minipage}
+
+      \begin{minipage}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=5cm]{9.png}
+        \caption{直流分量，值为 -0.68V}
+      \end{minipage}
+    \end{figure}
+
+    \newpage
+    信号的合成
+    \begin{figure}[htbp]
+      \centering
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=7cm]{5.1.png}
+      \caption{直流和基波合成，频率为 100.01Hz，峰峰值为 5.80V}
+      \end{minipage}
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=7cm]{5.2.png}
+      \caption{直流，一，二级谐波合成，频率为 100.03Hz，峰峰值为 5.62V}
+      \end{minipage}
+
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=7cm]{5.3.png}
+      \caption{直流，一，二，三级谐波，频率为 99.87Hz，峰峰值为 6.24V}
+      \end{minipage}
+      \centering
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=7cm]{5.4.png}
+      \caption{直流，一，二，三，四级谐波，频率为 96.12Hz，峰峰值为 6.52V}
+      \end{minipage}
+
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=7cm]{5.5.png}
+      \caption{直流，一，二，三，四，五级谐波，频率为 99.99Hz，峰峰值为 6.31V}
+      \end{minipage}
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=7cm]{5.6.png}
+      \caption{直流，一，二，三，四，五，六级谐波，频率为 100.23Hz，峰峰值为 6.57V}
+      \end{minipage}
+    \end{figure}
+
+
+
+  \newpage
+  \item 三角波的分解和合成
+    
+    信号的分解
+    \begin{figure}[htbp]
+      \centering
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=6cm]{3.1.png}
+      \caption{基波，频率为 50.12Hz，峰峰值为 6.4V}
+      \end{minipage}
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=6cm]{3.3.png}
+      \caption{三级谐波，频率为 153.22Hz，峰峰值为 2.16V}
+      \end{minipage}
+
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=6cm]{3.5.png}
+      \caption{五级谐波，频率为 251.4Hz，峰峰值为 2.1V}
+      \end{minipage}
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=6cm]{9.png}
+      \caption{直流分量，值为 -1.06V}
+      \end{minipage}
+    \end{figure}
+
+    \newpage
+    信号的合成
+    \begin{figure}[htbp]
+      \centering
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=7cm]{6.1.png}
+      \caption{直流和基波合成，频率为 49.12Hz，峰峰值为 6.5V}
+      \end{minipage}
+      
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=7cm]{6.2.png}
+      \caption{直流和一，三级谐波合成，频率为 50.02Hz，峰峰值为 6.23V}
+      \end{minipage}
+
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=7cm]{6.3.png}
+      \caption{直流和一，三，五级谐波合成，频率为 50.01Hz，峰峰值为 6.48V}
+      \end{minipage}
+    \end{figure}
+    
+
+  \newpage
+  \item 方波的分解和合成
+    
+    信号的分解
+    \begin{figure}[htbp]
+      \centering
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=6cm]{3.1.png}
+      \caption{一级谐波，频率为 49.97Hz，峰峰值为 20V}
+      \end{minipage}
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=6cm]{3.3.png}
+      \caption{三级谐波，频率为 153.2Hz，峰峰值为 7.20V}
+      \end{minipage}
+
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=6cm]{3.5.png}
+      \caption{五级谐波，频率为 245.6Hz，峰峰值为 4.48V}
+      \end{minipage}
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=6cm]{9.png}
+      \caption{直流分量，值为 -0.6V}
+      \end{minipage}
+    \end{figure}
+
+    \newpage
+    信号的合成
+    \begin{figure}[htbp]
+      \centering
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=7cm]{7.1.png}
+      \caption{直流和基波合成，频率为 48.12Hz，峰峰值为 20.5V}
+      \end{minipage}
+      
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=7cm]{7.2.png}
+      \caption{直流和一，三级谐波合成，频率为 50.12Hz，峰峰值为 21.23V}
+      \end{minipage}
+
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=7cm]{7.3.png}
+      \caption{直流和一，三，五级谐波合成，频率为 50.51Hz，峰峰值为 21.48V}
+      \end{minipage}
+    \end{figure}
+
+  \newpage
+  \item 矩形波的分解和合成
+  
+    信号的分解
+    \begin{figure}[htbp]
+      \centering
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=6cm]{3.1.png}
+      \caption{一级谐波，频率为 49.97Hz，峰峰值为 11.4V}
+      \end{minipage}
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=6cm]{3.2.png}
+      \caption{二级谐波，频率为 102.3Hz，峰峰值为 10.2V}
+      \end{minipage}
+
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=6cm]{3.3.png}
+      \caption{三级谐波，频率为 151.4Hz，峰峰值为 9.08V}
+      \end{minipage}
+      \centering
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=6cm]{3.4.png}
+      \caption{四级谐波，频率为 201.2Hz，峰峰值为 7.48V}
+      \end{minipage}
+
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=6cm]{3.5.png}
+      \caption{五级谐波，频率为 245.6Hz，峰峰值为 4.06V}
+      \end{minipage}
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=6cm]{3.6.png}
+      \caption{六级谐波，频率为 287.9Hz，峰峰值为 3.12V}
+      \end{minipage}
+      \begin{minipage}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=5cm]{9.png}
+        \caption{直流分量，值为 5.4V}
+      \end{minipage}
+    \end{figure}
+
+    \newpage
+    信号的合成
+    \begin{figure}[htbp]
+      \centering
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=7cm]{8.1.png}
+      \caption{直流和基波合成，频率为 50.01Hz，峰峰值为 20.80V}
+      \end{minipage}
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=7cm]{8.2.png}
+      \caption{直流，一，二级谐波合成，频率为 50.13Hz，峰峰值为 21.62V}
+      \end{minipage}
+
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=7cm]{8.3.png}
+      \caption{直流，一，二，三级谐波，频率为 49.77Hz，峰峰值为 21.24V}
+      \end{minipage}
+      \centering
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=7cm]{8.4.png}
+      \caption{直流，一，二，三，四级谐波，频率为 46.02Hz，峰峰值为 21.52V}
+      \end{minipage}
+
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=7cm]{8.5.png}
+      \caption{直流，一，二，三，四，五级谐波，频率为 49.89Hz，峰峰值为 21.31V}
+      \end{minipage}
+      \begin{minipage}[t]{0.48\textwidth}
+      \centering
+      \includegraphics[width=7cm]{8.6.png}
+      \caption{直流，一，二，三，四，五，六级谐波，频率为 50.83Hz，峰峰值为 21.57V}
+      \end{minipage}
+    \end{figure}
+
+
+\end{enumerate}
+
+\subsection*{七、实验总结}
+\begin{enumerate}
+  \item 输入信号可以分解为各级谐波信号，且各级谐波叠加起来会与输入信号越来越接近。这说明信号函数可以分解为许多谐波分量叠加的形式，与傅里叶级数展开的结果在误差范围内近似相等。
+  \item 并不是所有输入信号都有 $1 \sim 6$ 级谐波，比如三角波和方波的偶次谐波峰峰值较小可近似忽略，故只有奇次谐波。
+  \item 输入信号分解出的各级谐波峰峰值与傅里叶级数展开的 $A_n$ 近似相等，虽然在本次实验中，由于一些仪器接触不良以及示波器示数有些偏差，导致部分数据和理论上有一定偏差，不过大多数数据还是在误差范围内与理论值近似相等。
 \end{enumerate}
 
 \end{document}
